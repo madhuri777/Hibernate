@@ -1,0 +1,23 @@
+package com.bridgeit.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Cheque")
+public class Cheque {
+
+	@Column(name="cheque_type")
+	private String chequeType;
+
+	public String getChequeType() {
+		return chequeType;
+	}
+
+	public void setChequeType(String chequeType) {
+		this.chequeType = chequeType;
+	}
+	
+	
+}

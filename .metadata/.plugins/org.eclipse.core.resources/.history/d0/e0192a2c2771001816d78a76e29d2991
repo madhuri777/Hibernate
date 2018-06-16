@@ -1,0 +1,26 @@
+package com.bridgeit.utility;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class HibernateUtil {
+
+	private static final SessionFactory sessionFactory=buildFactory();
+	private static SessionFactory buildFactory() {
+		
+		
+		try {
+			sessionFactory=new Configuration().configure().buildSessionFactory();
+			System.out.println("try block "+sessionFactory);
+			
+		}catch(Throwable ep) {
+			System.err.println("Initial creation of sessionFactory failed "+ep);
+			throw new ExceptionInInitializerError(ep);
+		}
+	}
+	
+	public static SessionFactory getSessionFactory() {
+		System.out.println("getsession Method "+sessionFactory);
+		return sessionFactory;
+	}
+}

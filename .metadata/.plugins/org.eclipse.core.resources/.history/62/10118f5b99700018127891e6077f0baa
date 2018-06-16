@@ -1,0 +1,39 @@
+package com.bridgeit.model;
+
+import org.hibernate.Session;
+
+import com.bridgeit.util.HibernateUtil;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Session session=HibernateUtil.getSessionFactory().openSession();
+        System.out.println("mailn method "+session);
+        
+        session.beginTransaction();
+        
+        Employee emp=new Employee();
+        emp.setName("Manoj");
+        
+        Regular_Employee remp=new Regular_Employee();
+        remp.setSalary(30000);
+        remp.setBonus(2000);
+        
+        Contract_Employee cemp=new Contract_Employee();
+        cemp.setContract_period("15days");
+        cemp.setPiad_pre_hr(1000);
+        
+        session.save(emp);
+        session.save(remp);
+        session.save(cemp);
+        session.getTransaction().commit();
+        session.close();
+        System.out.println("successfully");
+        
+    }
+}

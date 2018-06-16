@@ -1,0 +1,18 @@
+package com.bridgeit.utility;
+
+import org.hibernate.SessionFactory;
+
+import javassist.convert.TransformWriteField;
+
+public class HibernateUtil {
+
+	private static final SessionFactory sessionFactory;
+	static {
+		try {
+			
+		}catch(Throwable ep) {
+			System.err.println("Initial creation of sessionFactory failed "+ep);
+			return new ExceptionInInitializerError(ep);
+		}
+	}
+}

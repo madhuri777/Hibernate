@@ -1,0 +1,10 @@
+package com.bridgeit.model;
+
+import javax.persistence.Entity;
+
+@Entity
+
+public class PayMent {
+
+	
+}

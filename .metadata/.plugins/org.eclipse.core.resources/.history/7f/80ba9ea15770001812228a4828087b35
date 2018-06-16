@@ -1,0 +1,28 @@
+package com.bridgeit.model;
+
+import java.util.Scanner;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	Scanner scanner=new Scanner(System.in);
+        Configuration config=new Configuration();
+        config.configure();
+        SessionFactory factory=config.buildSessionFactory();
+        Session session=factory.openSession();
+        Student student=new Student();
+        System.out.println("enter Student FirstName");
+        String fname=scanner.next();
+        student.setFirstName("fname");
+        session.persist(student);
+    }
+}

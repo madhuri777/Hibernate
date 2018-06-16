@@ -1,0 +1,13 @@
+package com.bridgeit.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Creadit_card")
+public class CreaditCard {
+
+	@Column(name="creadir_Type")
+	private String creaditCardTpe;
+}

@@ -1,0 +1,21 @@
+package com.bridgeit.model;
+
+import org.hibernate.Session;
+
+import com.bridgeit.utility.HibernateUtil;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Session session=HibernateUtil.getSessionFactory().openSession();
+        session.beginTransaction();
+        
+        PayMent payMent=new PayMent();
+        payMent.getPaymentid(10320);
+    }
+}

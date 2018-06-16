@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;HibernateFirst.com.bridgeit.hibernate&apos; to &apos;com.bridgeit.first&apos;&#x0A;- Original project: &apos;FirstHibernate&apos;&#x0A;- Original element: &apos;FirstHibernate/src/main/java/HibernateFirst.com.bridgeit.hibernate&apos;&#x0A;- Renamed element: &apos;FirstHibernate/src/main/java/com.bridgeit.first&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;HibernateFirst.com.bridgeit.hibernate&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;HibernateFirst.com.bridgeit.hibernate" name="com.bridgeit.first" qualified="false" references="true" stamp="1528971173694" textual="false" version="1.0"/>
+</session>

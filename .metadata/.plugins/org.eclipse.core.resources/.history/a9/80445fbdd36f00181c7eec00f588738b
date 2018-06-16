@@ -1,0 +1,31 @@
+package com.bridgeit.model;
+
+import org.hibernate.Session;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.SessionFactory;
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	Configuration cfg=new Configuration();
+    	cfg.configure("hibernate.cfg.xml");
+        SessionFactory factory=cfg.buildSessionFactory();
+        Session session=factory.openSession();
+        
+        Employee emp=new Employee();
+        emp.setId(1);
+        emp.setName("Baji");
+        emp.setCity("Mumbai");
+        emp.setState("Maharastra");
+        session.save(emp);
+        session.persist(emp);
+        session.close();
+        System.out.println("record add succesfully"); 
+       
+       
+    }
+}

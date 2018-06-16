@@ -1,0 +1,29 @@
+package com.bridgeit.model;
+
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="cheque")
+@AttributeOverrides({
+		@AttributeOverride(name="paymentId", column=@Column(name="paymentId")),
+		@AttributeOverride(name="amt",column=@Column(name="amt"))
+})
+public class Cheque extends Payment {
+
+	@Column(name="chequeType")
+	private String chequeType;
+
+	public String getChequeType() {
+		return chequeType;
+	}
+
+	public void setChequeType(String chequeType) {
+		this.chequeType = chequeType;
+	}
+	
+	
+}

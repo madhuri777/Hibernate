@@ -1,0 +1,5 @@
+1528983544071	Move 'resources' to 'main'
+1528983594292	Rename package 'com.bridgeit.model.WebApplication'
+1529037439400	Move 'Student.hbm.xml' to 'resources'
+1529037604812	Delete element
+1529037701243	Move 'hibernate.cfg.xml' to 'resources'

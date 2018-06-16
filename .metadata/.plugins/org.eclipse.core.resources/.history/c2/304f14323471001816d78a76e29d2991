@@ -1,0 +1,22 @@
+package com.bridgeit.model;
+
+import org.hibernate.Session;
+
+import com.bridgeit.utility.HibernateUtil;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Session session=HibernateUtil.getSessionFactory().openSession();
+        session.beginTransaction();
+        
+        Payment payment=new Payment();
+        Cheque cheque=new Cheque();
+        CreaditCard card=new CreaditCard();
+    }
+}

@@ -1,0 +1,17 @@
+package com.bridgeit.model;
+
+import org.hibernate.Session;
+
+import com.bridgeit.util.HibernateUtil;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Session session=HibernateUtil.getSessionFactory().openSession();
+    }
+}
