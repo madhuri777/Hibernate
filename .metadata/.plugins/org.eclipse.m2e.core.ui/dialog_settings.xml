@@ -50,9 +50,10 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/bridgeit/eclipse-workspace-Hibernate/InheritanceTPS"/>
+			<item value="/home/bridgeit/eclipse-workspace-Hibernate/Hibernate"/>
 			<item value="/home/bridgeit/eclipse-workspace-Hibernate/HibernateAnnotation"/>
 			<item value="/home/bridgeit/eclipse-workspace-Hibernate/WebApplication"/>
-			<item value="/home/bridgeit/eclipse-workspace-Hibernate/Hibernate"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -76,6 +77,8 @@
 			<item value="HibernateFirst"/>
 		</list>
 		<list key="artifactId">
+			<item value="InheritanceTPC"/>
+			<item value="InheritanceTPS"/>
 			<item value="Inheritance"/>
 			<item value="web"/>
 			<item value="WebApplication"/>
