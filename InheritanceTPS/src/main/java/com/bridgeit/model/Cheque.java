@@ -6,7 +6,7 @@ import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Cheque")
+@Table(name="Cheque_T_P_S")
 @PrimaryKeyJoinColumn(name="payment_id")
 public class Cheque extends PayMent{
 

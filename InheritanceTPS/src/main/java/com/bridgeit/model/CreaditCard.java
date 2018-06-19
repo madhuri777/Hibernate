@@ -6,7 +6,7 @@ import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="CreaditCard")
+@Table(name="CreaditCard_T_P_S")
 @PrimaryKeyJoinColumn(name="payment_id")
 public class CreaditCard extends PayMent{
 

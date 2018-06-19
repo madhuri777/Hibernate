@@ -17,16 +17,16 @@ public class App
         
         Payment payment=new Payment();
         //payment.setPymntid(100);
-        payment.setAmount(3000);
+        payment.setAmount(4000);
         
         Cheque cheque=new Cheque();
        // cheque.setPymntid(101);
         cheque.setAmount(4000);
-        cheque.setChequeType("ICIC");
+        cheque.setChequeType("SBI");
         
         CreaditCard card=new CreaditCard();
         card.setAmount(2000);
-        card.setCreaditCardType("VISA");
+        card.setCreaditCardType("MasterCard");
         
         session.save(payment);
         session.save(cheque);

@@ -10,7 +10,7 @@ import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Payment")
+@Table(name="Payment_T_P_S")
 @Inheritance(strategy=InheritanceType.JOINED)
 public class PayMent {
 

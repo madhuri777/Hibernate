@@ -33,9 +33,9 @@
 	</section>
 	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
 		<item value="480" key="width"/>
-		<item value="465" key="x"/>
-		<item value="26" key="y"/>
-		<item value="577" key="height"/>
+		<item value="440" key="x"/>
+		<item value="163" key="y"/>
+		<item value="605" key="height"/>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
 		<item value="internal" key="catalog"/>
@@ -50,6 +50,10 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/bridgeit/eclipse-workspace-Hibernate/OneToOne"/>
+			<item value="/home/bridgeit/eclipse-workspace-Hibernate/Many-To-Many"/>
+			<item value="/home/bridgeit/eclipse-workspace-Hibernate/One-TO-Many"/>
+			<item value="/home/bridgeit/eclipse-workspace-Hibernate/InheritanceTPC"/>
 			<item value="/home/bridgeit/eclipse-workspace-Hibernate/InheritanceTPS"/>
 			<item value="/home/bridgeit/eclipse-workspace-Hibernate/Hibernate"/>
 			<item value="/home/bridgeit/eclipse-workspace-Hibernate/HibernateAnnotation"/>
@@ -66,6 +70,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.bridgeit.model.HQL"/>
 			<item value="com.bridgeit.model"/>
 			<item value="com.bridgeit.model.web"/>
 			<item value="com.bridgeit.model.WebApplication"/>
@@ -77,6 +82,13 @@
 			<item value="HibernateFirst"/>
 		</list>
 		<list key="artifactId">
+			<item value="HQL"/>
+			<item value="CacheConcept"/>
+			<item value="OneToOne"/>
+			<item value="One-To-One"/>
+			<item value="Many-To-One"/>
+			<item value="Many-To-Many"/>
+			<item value="One-TO-Many"/>
 			<item value="InheritanceTPC"/>
 			<item value="InheritanceTPS"/>
 			<item value="Inheritance"/>
@@ -96,5 +108,11 @@
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.editor.dialogs.ManageDependenciesDialog">
+		<item value="851" key="width"/>
+		<item value="280" key="x"/>
+		<item value="110" key="y"/>
+		<item value="450" key="height"/>
 	</section>
 </section>
