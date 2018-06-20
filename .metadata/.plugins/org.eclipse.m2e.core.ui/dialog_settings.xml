@@ -50,6 +50,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/bridgeit/eclipse-workspace-Hibernate/HQLRetrive/src/main/java/com/bridgeit/model/Address.java"/>
+			<item value="/home/bridgeit/eclipse-workspace-Hibernate/HQL"/>
 			<item value="/home/bridgeit/eclipse-workspace-Hibernate/OneToOne"/>
 			<item value="/home/bridgeit/eclipse-workspace-Hibernate/Many-To-Many"/>
 			<item value="/home/bridgeit/eclipse-workspace-Hibernate/One-TO-Many"/>
@@ -70,8 +72,9 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.bridgeit.model.HQL"/>
 			<item value="com.bridgeit.model"/>
+			<item value="com.bridgeit.model.HQLRetrive"/>
+			<item value="com.bridgeit.model.HQL"/>
 			<item value="com.bridgeit.model.web"/>
 			<item value="com.bridgeit.model.WebApplication"/>
 			<item value="com.bridgeit.model.Hibernate"/>
@@ -82,6 +85,8 @@
 			<item value="HibernateFirst"/>
 		</list>
 		<list key="artifactId">
+			<item value="Criteria"/>
+			<item value="HQLRetrive"/>
 			<item value="HQL"/>
 			<item value="CacheConcept"/>
 			<item value="OneToOne"/>
@@ -95,7 +100,6 @@
 			<item value="web"/>
 			<item value="WebApplication"/>
 			<item value="Hibernate"/>
-			<item value="com.bridgeit.hibernate"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

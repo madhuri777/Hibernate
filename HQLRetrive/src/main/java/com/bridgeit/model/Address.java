@@ -26,9 +26,9 @@ public class Address {
 	@Column(name="Zip")
 	private int zipcode;
 	
-	@OneToOne(mappedBy="emp_add")
+	//@OneToOne(mappedBy="emp_add")
 	//@JoinTable(name="")
-	private Employee employee;
+	//private Employee employee;
 
 	public int getId() {
 		return id;
@@ -62,12 +62,17 @@ public class Address {
 		this.zipcode = zipcode;
 	}
 
-	public Employee getEmployee() {
-		return employee;
-	}
+//	public Employee getEmployee() {
+//		return employee;
+//	}
+//
+//	public void setEmployee(Employee employee) {
+//		this.employee = employee;
+//	}
 
-	public void setEmployee(Employee employee) {
-		this.employee = employee;
+	@Override
+	public String toString() {
+		return "Address [id=" + id + ", city=" + city + ", state=" + state + ", zipcode=" + zipcode +  "]";
 	}
 	
 	

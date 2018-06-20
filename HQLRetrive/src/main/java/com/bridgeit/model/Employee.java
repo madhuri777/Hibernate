@@ -4,6 +4,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -14,7 +15,7 @@ public class Employee {
 
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="Emp_id")
 	private int emp_id;
 	
@@ -46,6 +47,11 @@ public class Employee {
 
 	public void setEmp_add(Address emp_add) {
 		this.emp_add = emp_add;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [emp_id=" + emp_id + ", emp_name=" + emp_name + ", emp_add=" + emp_add + "]";
 	}
 	
 	
